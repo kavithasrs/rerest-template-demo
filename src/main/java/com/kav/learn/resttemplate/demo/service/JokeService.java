@@ -1,12 +1,16 @@
 package com.kav.learn.resttemplate.demo.service;
 
+/** Java class to perform HTTP request */
+
 import com.kav.learn.resttemplate.demo.model.JokeResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
+
 public class JokeService {
     private static final String BASE = "http://api.icndb.com/jokes/random?limitTo=[nerdy]";
 

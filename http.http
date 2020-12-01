@@ -1,1 +1,4 @@
-GET http://api.icndb.com/jokes/random?limitTo=[nerdy]
+
+
+GET http://api.icndb.com/jokes/random?limitTo=[nerdy]&firstName=Sahitya&lastName=Subramanian
+
