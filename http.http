@@ -10,8 +10,8 @@ POST http://localhost:8080/api/tutorials
 Content-Type: application/json
 
 {
-  "title" : "spring-boot",
-  "description": "book about spring-boot",
+  "title" : "spring-JPA",
+  "description": "book about JPA",
   "published" : "true"
 }
 
