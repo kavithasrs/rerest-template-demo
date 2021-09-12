@@ -10,5 +10,9 @@ import java.util.UUID;
 public interface TutorialRepository extends CassandraRepository<Tutorial, UUID> {
 
     @AllowFiltering
-    List<Tutorial> findByPublished(boolean published);
+    List<Tutorial> findByPublishedIsTrue();
+
+    //https://docs.spring.io/spring-data/cassandra/docs/current/reference/html/#cassandra.repositories.queries
+
+    List<Tutorial> findByPublishedAndDescription(boolean published, String description);
 }
