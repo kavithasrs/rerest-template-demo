@@ -2,7 +2,6 @@ package com.kav.learn.resttemplate.demo.service;
 
 
 
-import com.kav.learn.resttemplate.demo.entities.Site;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
@@ -26,7 +25,7 @@ public class GeocoderService {
         restTemplate = builder.build();
     }
 
-    public Site getLetLng(String... address){
+    public void getLetLng(String... address){
         String encodedAddress = Stream.of(address)
                          .map(component -> URLEncoder.encode(component, StandardCharsets.UTF_8))
                          .collect(Collectors.joining(","));
