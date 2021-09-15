@@ -23,6 +23,7 @@ public class TutorialService {
     }
 
     public List<Tutorial> getAllTutorials() {
+        logger.info("get tutorials");
             List<Tutorial> tutorials = new ArrayList<Tutorial>();
             tutorialRepository.findAll().forEach(tutorials::add);
             return tutorials;
